@@ -1,0 +1,116 @@
+.row {
+	@mixin clearfix;
+		
+	@mixin inSmallest {
+		&--gutters > [class^="row"]{
+			padding-right: 0;
+		}
+	
+		& [class^="row--"]{
+			width: 100%;
+		}
+		
+		&--b-margin-sm {
+			margin-bottom: 1rem;
+		}
+	}
+	
+	@mixin inSmall {
+		&--gutters > [class^="row"]{
+			padding-right: 0;
+		}
+	
+		& [class^="row--"]{
+			width: 100%;
+		}
+		
+		&--b-margin-sm {
+			margin-bottom: 1rem;
+		}
+	}
+	
+	@mixin atMedium {
+		
+		&--gutters > [class^="row"]{
+			padding-right: 0;
+		}
+		
+		&--1 {
+			float: left;
+			width: 8.33%;
+		}
+	
+		&--2 {
+			float: left;
+			width: 16.67%;
+		}
+				
+		&--3 {
+			float: left;
+			width: 25%;
+		}
+			
+		&--4 {
+			float: left;
+			width: 33.33%;
+		}
+		
+		&--5 {
+			float: left;
+			width: 41.67%;
+		}
+			
+		&--6 {
+			float: left;
+			width: 50%;
+		}
+	
+		&--7 {
+			float: left;
+			width: 58.33%;
+		}
+			
+		&--8 {
+			float: left;
+			width: 66.67%;
+		}
+		
+		&--9 {
+			float: left;
+			width: 75%;
+		}
+		
+		&--10 {
+			float: left;
+			width: 83.33%;
+		}
+		
+		&--11 {
+			float: left;
+			width: 91.67%;
+		}
+		
+		&--12 {
+			float: left;
+			width: 100%;
+		}	
+	
+	
+		&--4-larger {
+			width: 37%;
+		}
+		
+		&--8-smaller {
+			width: 63%;
+		}
+	
+	}
+
+	@mixin atMedium {
+		
+		&--gutters > [class^="row"]{
+			padding-right: 65px;
+		}
+	}
+	
+}

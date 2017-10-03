@@ -1,0 +1,26 @@
+body {
+	font-family: "Roboto", sans-serif;
+	color: $mainDarkGrey;
+	min-width: 320px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: $mainOrange;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
