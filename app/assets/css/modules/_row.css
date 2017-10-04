@@ -1,7 +1,20 @@
 .row {
 	@mixin clearfix;
-		
+	
+	&--gutters {
+		margin-right: -65px;
+	}
+	
+	&--gutters-large {
+		margin-right: -100px;
+	}
+	
 	@mixin inSmallest {
+		
+		&--gutters, &--gutters-large {
+			margin-right: 0;
+		}
+	
 		&--gutters > [class^="row"]{
 			padding-right: 0;
 		}
@@ -16,6 +29,11 @@
 	}
 	
 	@mixin inSmall {
+		
+		&--gutters, &--gutters-large {
+			margin-right: 0;
+		}
+		
 		&--gutters > [class^="row"]{
 			padding-right: 0;
 		}
@@ -111,6 +129,11 @@
 		&--gutters > [class^="row"]{
 			padding-right: 65px;
 		}
+		
+		&--gutters-large > [class^="row"]{
+			padding-right: 100px;
+		}
+		
 	}
 	
 }
