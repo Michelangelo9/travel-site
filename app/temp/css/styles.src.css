@@ -491,6 +491,10 @@ a:hover, a:focus {
 }
 	}
 
+.page-section--blue {
+		background-color: #2f5572;
+	}
+
 .wrapper {
 	padding-left: 15px;
 	padding-right: 15px;
@@ -521,7 +525,20 @@ a:hover, a:focus {
 		display: table;
 	}
 
+.row--gutters {
+		margin-right: -65px;
+	}
+
+.row--gutters-large {
+		margin-right: -100px;
+	}
+
 @media (max-width: 529px){
+		
+		.row--gutters, .row--gutters-large {
+			margin-right: 0;
+		}
+	
 		.row--gutters > [class^="row"]{
 			padding-right: 0;
 		}
@@ -536,6 +553,11 @@ a:hover, a:focus {
 	}
 
 @media (min-width: 530px) and (max-width: 799px){
+		
+		.row--gutters, .row--gutters-large {
+			margin-right: 0;
+		}
+		
 		.row--gutters > [class^="row"]{
 			padding-right: 0;
 		}
@@ -629,6 +651,10 @@ a:hover, a:focus {
 		
 		.row--gutters > [class^="row"]{
 			padding-right: 65px;
+		}
+		
+		.row--gutters-large > [class^="row"]{
+			padding-right: 100px;
 		}
 	}
 
@@ -783,7 +809,7 @@ a:hover, a:focus {
 
 .generic-content-container p {
 		line-height: 1.65;
-		margin: 1.8rem 0;
+		margin: 0 0 1.8rem 0;
 	}
 
 @media (min-width: 530px){
@@ -798,5 +824,101 @@ a:hover, a:focus {
 		color: #d59541;
 	}
 
+.section-title {
+	font-size: 2.55rem;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 300;
 
+
+}
+
+.section-title .bold {
+		font-weight: 500;
+	}
+
+.section-title--icon {
+		display: block;
+		margin: 0 auto 0.6rem auto;
+	
+	}
+
+@media (min-width: 530px){
+
+.section-title--icon {
+			margin-right: 0.5rem;
+			font-size: 1.75rem;
+			display: inline-block;
+			margin-bottom: 0
+	
+	}
+	}
+
+@media (max-width: 529px){
+
+.section-title--icon {
+			font-size: 1.75rem
+	
+	}
+	}
+
+.feature-item {
+	position: relative;
+	margin-bottom: 0.8rem;
+	padding-bottom: 1rem;
+
+	
+}
+
+@media (min-width: 530px){
+
+.feature-item {
+		padding-left: 94px
+
+	
+}
+	}
+
+@media (min-width: 800px){
+
+.feature-item {
+		padding-bottom: 2.5rem
+
+	
+}
+	}
+
+.feature-item--icon {
+		display: block;
+		margin: 0 auto;
+	}
+
+@media (min-width: 530px){
+
+.feature-item--icon {
+			position: absolute;
+			left: 0
+	}
+	}
+
+.feature-item--title {
+		font-size: 1.6rem;
+		font-weight: 300;
+		margin-bottom: 0.8rem;
+		text-align: center;
+		margin-top: 0.7rem;
+	}
+
+@media (min-width: 530px){
+
+.feature-item--title {
+			margin-top: 1em;
+			font-size: 1.875rem;
+			text-align: left
+	}
+	}
+
+.feature-item h3, .feature-item p {
+		color: #ffffff;
+	}
 
